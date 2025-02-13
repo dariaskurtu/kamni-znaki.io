@@ -1,0 +1,284 @@
+
+/* шрифты */
+@font-face {
+    font-family: 'Soyuz Grotesk';
+    src: url('fonts/SoyuzGrotesk-Bold.otf') format('otf');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+  }
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-Regular.woff2) format('woff2');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: "Montserrat";
+    src: url(fonts/Montserrat-Bold.woff2) format('woff2');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+.container-fluid {
+    background-color: #204C34;
+}
+.navbar-brand{
+    color: white;
+}
+
+.navbar {
+    padding: 0;
+}
+
+.navbar-toggler-icon {
+    color: white; /* Устанавливает белый цвет иконки */
+}
+
+.navbar a {
+    color: rgb(255, 255, 255); /* Устанавливаем цвет текста на черный для контраста */
+}
+.navbar-toggler {
+    border-color: rgb(255, 255, 255); /* Меняем цвет рамки кнопки на черный, если это необходимо */
+}
+
+.navbar-brand {
+    font-size: 100px;
+}
+
+.navbar-toggler {
+    color: white;
+}
+
+/* Общие отступы для десктопа */
+.container-fluid {
+    padding-left: 50px;
+    padding-right: 50px;
+}
+
+/* Эффект увеличения при наведении на пункты меню */
+.nav-link {
+    transition: transform 0.3s; /* Плавный переход */
+}
+
+.navbar-nav .nav-link.active{
+    text-decoration: underline;
+    color: white;
+}
+
+.nav-link:hover {
+    transform: scale(1.1); /* Увеличение на 10% */
+    color: white;
+}
+
+.navbar-nav li a{
+    color: white;
+    font-family: "Montserrat";
+    font-weight: normal;
+}
+
+.navbar-nav li a :hover{
+    color: white;
+}
+
+/* Центрирование меню на десктопе */
+@media (min-width: 992px) {
+    .navbar-collapse {
+      position: absolute; /* Абсолютное позиционирование */
+      left: 50%; /* Сдвиг на 50% вправо */
+      transform: translateX(-50%); /* Центрирование */
+    }
+  }
+
+/* Запрет переноса пунктов меню */
+.navbar-nav {
+    flex-wrap: nowrap; /* Запрет переноса на новую строку */
+    white-space: nowrap; /* Запрет переноса текста внутри пунктов */
+    align-items: center;
+    
+  }
+
+/* Изменение цвета иконки бургер-меню на белый */
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+  }
+  
+  /* Увеличение отступов между пунктами меню */
+  .nav-item {
+    margin-left: 1rem; /* Отступ между пунктами */
+  }
+
+/* Убедимся, что логотип и бургер-меню выровнены правильно */
+.navbar-brand {
+    font-size: 1.5rem; /* Размер логотипа */
+    font-weight: bold;
+  }
+  
+.navbar-toggler {
+    border: none; /* Убрать границу у кнопки */
+}
+  
+/* Центрирование логотипа на мобильных устройствах */
+@media (max-width: 992px) {
+.navbar-brand {
+    margin-left: auto; /* Центрирование логотипа */
+    margin-right: auto;
+    font-size: 19px;
+}
+}
+
+.page1 {
+    position: relative;
+    display: inline-block;
+    width: 100%; /* Занимает всю ширину */
+    overflow: hidden; /* Скрывает всё, что выходит за границы контейнера */
+  }
+
+/* Изображение */
+.img-p1 {
+    width:100vw ; /* Адаптивное изображение */
+    height: 95vh; /* Сохраняем пропорции */
+    display: block;
+    object-fit: cover;
+  }
+  
+  @media (max-width: 768px) {
+    .img-p1 {
+      height: 95vh; /* 2/3 высоты экрана */
+      width: 100vw; /* Сохраняем пропорции */
+      margin: 0 auto; /* Центрирование картинки */
+      object-fit: cover; /* Картинка заполняет контейнер, сохраняя пропорции */
+    }
+  }
+
+.text-page1 {
+    /* Текст */
+  font-size: 24px; /* Размер текста */
+  color: #204C34; /* Цвет текста */
+  margin-bottom: 20px; /* Отступ между текстом и кнопкой */
+  font-family: "Soyuz Grotesk";
+}
+
+@media (max-width: 600px) {
+    .text-page1 {
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+}
+
+@media (min-width: 601px) {
+    .text-page1 {
+        font-size: 4vw;
+    }
+    
+}
+
+@media (min-width: 1200px) {
+    .text-page1 {
+        font-size: 60px;
+    }
+}
+
+/* Отступы для бургер-меню на мобильных устройствах */
+@media (max-width: 991.98px) {
+    .container-fluid {
+      padding-right: 10px; /* Отступ слева */
+    }
+  }
+
+  
+
+  /* Основные стили для кнопки */
+.btn-p1 {
+    position: relative; /* Для позиционирования псевдоэлемента */
+    background-image: linear-gradient(to right, #204C34, #B0E2C7); /* Градиент */
+    color: white; /* Цвет текста кнопки */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border: none; /* Убираем границу */
+    border-radius: 50px; /* Закругляем углы */
+    font-size: 18px; /* Размер текста кнопки */
+    cursor: pointer; /* Курсор в виде указателя */
+    white-space: nowrap; /* Запрет переноса текста */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Тень */
+    overflow: hidden; /* Скрываем всё, что выходит за границы кнопки */
+    font-family: "Montserrat";
+    font-weight: bold;
+  }
+  
+  /* Псевдоэлемент для блика */
+  .btn-p1::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%; /* Начальная позиция за пределами кнопки */
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+      90deg,
+      rgba(255, 255, 255, 0) 0%,
+      rgba(255, 255, 255, 0.4) 50%,
+      rgba(255, 255, 255, 0) 100%
+    ); /* Градиент для блика */
+    animation: shine 3s infinite; /* Анимация */
+  }
+  
+  /* Анимация для блика */
+  @keyframes shine {
+    0% {
+      left: -100%; /* Начальная позиция */
+    }
+    100% {
+      left: 100%; /* Конечная позиция */
+    }
+  }
+  
+  /* Эффект при наведении */
+  .btn-p1:hover {
+    background-image: linear-gradient(to right, #1A3E2A, #9DCFB5); /* Градиент при наведении */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Увеличенная тень при наведении */
+  }
+  
+
+.overlay-text {
+    position: absolute;
+    top: 50%; /* Центрирование по вертикали */
+    left: 50%; /* Центрирование по горизонтали */
+    transform: translate(-50%, -50%); /* Точное центрирование */
+    text-align: center; /* Выравнивание текста по центру */
+    width: 100%; /* Занимает всю ширину */
+  }
+
+  @media (min-width: 601px) {
+  
+    .btn-p1 {
+      font-size: 14px; /* Уменьшаем размер текста кнопки */
+      width: 200px;
+      height: 50px;
+    }
+  }
+
+  @media (max-width: 600px) {
+    .btn-p1 {
+        font-size: 10px;
+        width: 150px;
+        height: 35px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .btn-p1 {
+        font-size: 24px;
+        width: 330px;
+        height: 70px;
+    }
+}
+
+/*Камни по знакам зодиака*/
+  
+
+
+
