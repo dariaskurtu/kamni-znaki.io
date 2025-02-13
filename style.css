@@ -344,7 +344,7 @@
         font-size: 30px;
     }
 }
-@media (min-width: 601px) {
+@media (min-width: 700px) {
     .text {
         font-size: 25px;
     }
@@ -359,8 +359,8 @@
         height: auto;
     }
     .img-p2{
-        width: 60vh;
-        height: 50vh;
+        height: 20vh;
+        width: 20vw
     }
     .how2 {
         font-size: 30px;
@@ -449,12 +449,13 @@
   
   /* Текст карточки */
   .card-text {
-    font-size: 16px; /* Размер текста */
+    font-size: 18px; /* Размер текста */
     color: #204C34; /* Цвет текста */
     margin: 0; /* Убираем отступы */
     flex-grow: 1; /* Текст занимает оставшееся пространство */
     font-family: "Montserrat";
     font-weight: normal;
+    text-align: right;
   }
   
   /* Адаптация для мобильных устройств */
@@ -479,7 +480,7 @@
     }
   
     .card-text {
-      font-size: 14px; /* Уменьшаем размер текста */
+      font-size: 11px; /* Уменьшаем размер текста */
     }
   
     .card-content {
@@ -487,7 +488,44 @@
     }
   }
 
+  .btn-p3 {
+    position: relative; /* Для позиционирования псевдоэлемента */
+    background-image: linear-gradient(to right, #204C34, #B0E2C7); /* Градиент */
+    color: white; /* Цвет текста кнопки */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border: none; /* Убираем границу */
+    border-radius: 50px; /* Закругляем углы */
+    cursor: pointer; /* Курсор в виде указателя */
+    white-space: nowrap; /* Запрет переноса текста */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Тень */
+    overflow: hidden; /* Скрываем всё, что выходит за границы кнопки */
+    font-family: "Montserrat";
+    font-weight: bold;
+    margin-top: 20px;
+  }
 
+  /* Эффект при наведении */
+  .btn-p3:hover {
+    background-image: linear-gradient(to right, #1A3E2A, #9DCFB5); /* Градиент при наведении */
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3); /* Увеличенная тень при наведении */
+  }
+
+  @media (max-width: 768px) {
+    .btn-p3 {
+      padding: 8px 16px; /* Уменьшаем отступы внутри кнопки */
+      font-size: 14px; /* Уменьшаем размер текста */
+      width: 100%; /* Кнопка занимает всю ширину контейнера */
+      max-width: 300px; /* Максимальная ширина кнопки */
+      margin: 20px auto 0; /* Центрирование кнопки и отступ сверху */
+    }
+  }
+
+  @media (min-width: 700px) {
+    .card-text {
+        font-size: 14px; /* Уменьшаем размер текста */
+      }
+    
+}
 
 
 
