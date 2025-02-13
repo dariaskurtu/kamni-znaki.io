@@ -183,14 +183,13 @@
     }
 }
 
-/* Отступы для бургер-меню на мобильных устройствах */
+/*Отступы для бургер-меню на мобильных устройствах */
 @media (max-width: 991.98px) {
     .container-fluid {
-      padding-right: 10px; /* Отступ слева */
+      padding-right: px; 
     }
   }
 
-  
 
   /* Основные стили для кнопки */
 .btn-p1 {
@@ -276,6 +275,244 @@
         height: 70px;
     }
 }
+
+.page2 {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    width: 100vw; /* Занимает всю ширину */
+    overflow: hidden; /* Скрывает всё, что выходит за границы контейнера */
+    background-color:#204C34;
+    color: white;
+    padding-left: 50px;
+    height: 60vh;
+    margin-top: 30px;
+  }
+
+.how {
+    font-family: "Soyuz Grotesk";
+    text-align: left;
+    font-size: 70px;
+    line-height: 0.9;
+    margin-top: 20px;
+    color: white;
+}
+
+.text {
+    font-family: "Montserrat";
+    font-size: 22px;
+    font-weight: normal;
+    top: 50%; /* Центрирование по вертикали */
+
+}
+
+.more {
+    position: relative; /* Для позиционирования псевдоэлемента */
+    background-color: white;
+    color: #204C34; /* Цвет текста кнопки */
+    padding: 10px 20px; /* Отступы внутри кнопки */
+    border: none; /* Убираем границу */
+    border-radius: 50px; /* Закругляем углы */
+    font-size: 20px; /* Размер текста кнопки */
+    cursor: pointer; /* Курсор в виде указателя */
+    white-space: nowrap; /* Запрет переноса текста */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* Тень */
+    overflow: hidden; /* Скрываем всё, что выходит за границы кнопки */
+    font-family: "Montserrat";
+    font-weight: bold;
+  }
+
+@media (max-width: 600px) {
+    .text {
+        font-size: 14px;
+    }
+    .more {
+        font-size: 13px;
+        margin-bottom: 20px ;
+    }
+    .how{
+        font-size: 40px;
+    }
+    .img-p2 {
+        display: none;
+    }
+    .page2{
+        padding-right: 50px;
+        height: auto;
+    }
+    .how2{
+        font-size: 30px;
+    }
+}
+@media (min-width: 601px) {
+    .text {
+        font-size: 25px;
+    }
+    .more {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
+    .how{
+        font-size: 65px;
+    }
+    .page2{
+        height: auto;
+    }
+    .img-p2{
+        width: 60vh;
+        height: 50vh;
+    }
+    .how2 {
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1200px) {
+    .text {
+        font-size: 22px;
+    }
+}
+
+/* Контейнер для картинки и контента */
+.page3 {
+    position: relative; /* Для позиционирования контента */
+    width: 100%; /* Занимает всю ширину */
+    height: 100vh; /* Занимает всю высоту экрана */
+    overflow: hidden; /* Скрывает всё, что выходит за границы */
+  }
+  
+  /* Картинка */
+  .img-p3 {
+    width: 100%; /* Занимает всю ширину контейнера */
+    height: 100%; /* Занимает всю высоту контейнера */
+    object-fit: cover; /* Сохраняет пропорции и заполняет контейнер */
+    position: absolute; /* Позиционирование относительно .page3 */
+    top: 0;
+    left: 0;
+    z-index: 1; /* Картинка находится под контентом */
+  }
+  
+  /* Контейнер для заголовка и карточек */
+  .content {
+    position: absolute; /* Позиционирование относительно .page3 */
+    top: 50%; /* Центрирование по вертикали */
+    left: 50%; /* Центрирование по горизонтали */
+    transform: translate(-50%, -50%); /* Точное центрирование */
+    z-index: 2; /* Контент находится над картинкой */
+    width: 80%; /* Ширина контейнера */
+    max-width: 800px; /* Максимальная ширина */
+    text-align: center; /* Текст по центру */
+  }
+  
+  /* Заголовок */
+  .title {
+    font-size: 32px; /* Размер заголовка */
+    color: #204C34; /* Цвет текста */
+    margin-bottom: 30px; /* Отступ снизу */
+    font-family: "Soyuz Grotesk";
+  }
+  
+  /* Контейнер для карточек */
+  .cards {
+    display: flex;
+    flex-direction: column; /* Карточки друг под другом */
+    gap: 20px; /* Расстояние между карточками */
+  }
+  
+  /* Стили для карточек */
+  .card {
+    background-color: rgba(255, 255, 255, 0); /* Прозрачный белый фон */
+    border: 1px solid #204C34; /* Белая обводка */
+    border-radius: 30px; /* Закруглённые углы */
+    padding: 20px; /* Отступы внутри карточки */
+    backdrop-filter: blur(5px); /* Размытие фона */
+    display: flex;
+    align-items: center; /* Выравнивание по вертикали */
+    justify-content: center; /* Центрирование по горизонтали */
+    min-height: 120px; /* Минимальная высота карточки */
+  }
+  
+  /* Контейнер для иконки и текста */
+  .card-content {
+    display: flex;
+    align-items: center; /* Выравнивание по вертикали */
+    gap: 20px; /* Расстояние между иконкой и текстом */
+  }
+  
+  /* Иконка */
+  .icon {
+    width: 50px; /* Размер иконки */
+    height: 50px;
+    flex-shrink: 0; /* Иконка не сжимается */
+  }
+  
+  /* Текст карточки */
+  .card-text {
+    font-size: 16px; /* Размер текста */
+    color: #204C34; /* Цвет текста */
+    margin: 0; /* Убираем отступы */
+    flex-grow: 1; /* Текст занимает оставшееся пространство */
+    font-family: "Montserrat";
+    font-weight: normal;
+  }
+  
+  /* Адаптация для мобильных устройств */
+  @media (max-width: 768px) {
+    .content {
+      width: 90%; /* Увеличиваем ширину контейнера для мобильных устройств */
+    }
+  
+    .title {
+      font-size: 24px; /* Уменьшаем размер заголовка */
+      margin-bottom: 20px; /* Уменьшаем отступ снизу */
+    }
+  
+    .card {
+      padding: 15px; /* Уменьшаем отступы внутри карточки */
+      min-height: 100px; /* Уменьшаем минимальную высоту карточки */
+    }
+  
+    .icon {
+      width: 40px; /* Уменьшаем размер иконки */
+      height: 40px;
+    }
+  
+    .card-text {
+      font-size: 14px; /* Уменьшаем размер текста */
+    }
+  
+    .card-content {
+      gap: 15px; /* Уменьшаем расстояние между иконкой и текстом */
+    }
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*Камни по знакам зодиака*/
   
