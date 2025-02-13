@@ -2,7 +2,7 @@
 /* шрифты */
 @font-face {
     font-family: 'Soyuz Grotesk';
-    src: url('fonts/SoyuzGrotesk-Bold.otf') format('otf');
+    src: url('fonts/Soyuz\ Grotesk\ Bold.woff2') format('woff2');
     font-weight: bold;
     font-style: normal;
     font-display: swap;
