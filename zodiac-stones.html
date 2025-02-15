@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Камни по знакам зодиака</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+            <!-- Логотип -->
+            <a class="navbar-brand" href="index.html">kamni-znaki</a>
+            <!-- Кнопка бургер-меню -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Основное меню -->
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" aria-current="page" href="index.html">Главная</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="zodiac-stones.html">Камни по знакам зодиака</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Статьи</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Свойства камней</a>
+                    </li>
+                </ul>
+          </div>
+    </nav>
+    <div class="main">
+        <!-- Выпадающий список сверху -->
+        <div class="filter">
+            <select id="zodiacSelect" onchange="filterCards()">
+                <option value="all">Все знаки</option>
+                <option value="Овен">Овен</option>
+                <option value="Телец">Телец</option>
+                <option value="Близнецы">Близнецы</option>
+                <option value="Рак">Рак</option>
+                <option value="Лев">Лев</option>
+                <option value="Дева">Дева</option>
+                <option value="Весы">Весы</option>
+                <option value="Скорпион">Скорпион</option>
+                <option value="Стрелец">Стрелец</option>
+                <option value="Козерог">Козерог</option>
+                <option value="Водолей">Водолей</option>
+                <option value="Рыбы">Рыбы</option>
+            </select>
+        </div>
+
+        <div class="cards">
+            <div class="card" data-sign="Овен">
+                <div class="image-container">
+                    <img src="images/aries.png" alt="овен">
+                    <div class="text-overlay">
+                        <h2>Овен</h2>
+                        <p class="content">
+                            Для тех, кто хочет уравновесить или усилить свою энергию Овна (или даже просто немного ослабить эту соревновательность), существует множество камней, энергия которых хорошо дополняет этот огненный знак.
+                            Вот несколько лучших кристаллов и камней для Овнов:
+                        </p>
+                        <button type="submit" href="#">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-sign="Телец">
+                <div class="image-container">
+                    <img src="images/taurus.png" alt="телец">
+                    <div class="text-overlay">
+                        <h2>Телец</h2>
+                        <p class="content">
+                            Тельцы могут по-настоящему извлечь пользу из мирной энергии или яркой жизненной энергии, которую могут принести кристаллы. От поиска камней, которые резонируют с их приземленностью, до прикосновения к силе кристаллов, которые приносят живую энергию высокой вибрации, вот некоторые из лучших кристаллов для тех, кто родился под знаком Тельца.
+                        </p>
+                        <button type="submit" href="#">Подробнее</button>
+                    </div>
+                </div>
+            </div>  
+            <div class="card" data-sign="Близнецы">
+                <div class="image-container">
+                    <img src="images/twins.png" alt="близнецы">
+                    <div class="text-overlay">
+                        <h2>Близнецы</h2>
+                        <p class="content">
+                            Многогранным, умным, талантливым, приветливым людям, рождённым под соответствующим знаком, верными спутниками и помощниками станут камни-талисманы для Близнецов
+                        </p>
+                        <button type="submit" href="#">Подробнее</button>
+                    </div>
+                </div>
+            </div>    
+            <div class="card" data-sign="Рак">
+                <div class="image-container">
+                    <img src="images/cancer.png" alt="рак">
+                    <div class="text-overlay">
+                        <h2>Рак</h2>
+                        <p class="content">
+                            Раки очень чувствительны и им определённо могут быть полезны мощные кристаллы, которые помогают им справляться с сильными эмоциями и дают заземляющую исцеляющую энергию. 
+                        </p>
+                        <button type="submit" href="#">Подробнее</button>
+                    </div>
+                </div>
+            </div>    
+            <div class="card" data-sign="Лев">
+                <div class="image-container">
+                    <img src="images/leo.png" alt="лев">
+                    <div class="text-overlay">
+                        <h2>Лев</h2>
+                        <p class="content">
+                            Те, кто родился под знаком Льва, — прирождённые правители, сильные, властные и авторитетные. Этот символ относится к огню и, следовательно, подчиняется Солнцу и стремится дарить свет, тепло и жизнь. На первом месте для Львов всегда дом и личная независимость. Какой камень лучше всего подходит Львам?
+                        </p>
+                        <button type="submit" href="#">Подробнее</button>
+                    </div>
+                </div>
+            </div>    
+            <div class="card" data-sign="Дева">
+                <div class="image-container">
+                    <img src="images/virgo.png" alt="дева">
+                    <div class="text-overlay">
+                        <h2>Дева</h2>
+                        <p class="content">
+                            Дева — очень глубокий и сложный знак зодиака. Несколько драгоценных и натуральных камней помогают ей раскрыть природные черты характера и защитить себя от негатива.
+                        </p>
+                        <button type="submit" href="#">Подробнее</button>
+                    </div>
+                </div>
+            </div>    
+            <div class="card" data-sign="Весы">
+                <div class="image-container">
+                    <img src="images/libra.png" alt="весы">
+                    <div class="text-overlay">
+                        <h2>Весы</h2>
+                        <p class="content">
+                            Жизнь с Весами — это не сплошные розы: они нерешительны, кокетливы, и их часто трудно побудить раскрыться. В этом случае целительные кристаллы также могут помочь вытащить Весов из их скорлупы.
+                        </p>
+                        <button type="submit" href="#">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-sign="Скорпион">
+                <div class="image-container">
+                    <img src="images/scorpio.png" alt="скорпион">
+                    <div class="text-overlay">
+                        <h2>Скорпион</h2>
+                        <p class="content">
+                            Если вы энергичный, загадочный и притягательный Скорпион, вам может быть интересно, какие кристаллы лучше всего подходят для раскрытия ваших уникальных качеств.
+                        </p>
+                        <button type="submit" href="#">Подробнее</button>
+                    </div>
+                </div>
+            </div>    
+            <div class="card" data-sign="Стрелец">
+                <div class="image-container">
+                    <img src="images/sagittarius.png" alt="стрелец">
+                    <div class="text-overlay">
+                        <h2>Стрелец</h2>
+                        <p class="content">
+                            Как и у каждого знака зодиака, у Стрельца есть свой камень-талисман, который, как считается, усиливает его уникальные черты и даёт различные преимущества. Итак, какой же камень-талисман у Стрельца и какими свойствами он обладает?
+                        </p>
+                        <button type="submit" href="#">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-sign="Козерог">
+                <div class="image-container">
+                    <img src="images/capricorn.png" alt="козерог">
+                    <div class="text-overlay">
+                        <h2>Козерог</h2>
+                        <p class="content">
+                            Вы Козерог и вам интересно, какие камни вам следует носить, чтобы усилить свою энергию и привнести баланс в свою жизнь? Итак, приготовьтесь узнать о идеальных камнях, которые соответствуют вашему знаку зодиака Козерог, и откройте для себя мир позитивной энергии и личных преобразований.
+                        </p>
+                        <button type="submit" href="#">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-sign="Водолей">
+                <div class="image-container">
+                    <img src="images/aquarius.png" alt="водолей">
+                    <div class="text-overlay">
+                        <h2>Водолей</h2>
+                        <p class="content">
+                            Независимые, уверенные в себе и целеустремлённые — те, кто родился под знаком Водолея, известны своей сообразительностью. Мы подробнее рассмотрим некоторые из самых мощных камней, которые Водолеям стоит иметь в своей коллекции.
+                        </p>
+                        <button type="submit" href="#">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+            <div class="card" data-sign="Рыбы">
+                <div class="image-container">
+                    <img src="images/pisces.png" alt="рыбы">
+                    <div class="text-overlay">
+                        <h2>Рыбы</h2>
+                        <p class="content">
+                            Люди, рождённые под этим знаком, творческие, заботливые и чуткими — иногда до крайности. Поскольку они очень чувствительны, люди, рождённые под этим знаком, могут извлечь огромную пользу из тонкой энергии кристаллов.
+                        </p>
+                        <button type="submit" href="#">Подробнее</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+<script src="script.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
