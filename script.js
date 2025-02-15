@@ -1,5 +1,13 @@
-function menuOnClick() {
-    document.getElementById("menu-bar").classList.toggle("change");
-    document.getElementById("nav").classList.toggle("change");
-    document.getElementById("menu-bg").classList.toggle("change-bg");
-  }
+function filterCards() {
+    const select = document.getElementById('zodiacSelect');
+    const selectedSign = select.value;
+    const cards = document.querySelectorAll('.card');
+
+    cards.forEach(card => {
+        if (selectedSign === 'all' || card.getAttribute('data-sign') === selectedSign) {
+            card.style.display = '';
+        } else {
+            card.style.display = 'none';
+        }
+    });
+}
